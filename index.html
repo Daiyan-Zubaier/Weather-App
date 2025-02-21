@@ -5,10 +5,44 @@
         <title>
             Weather App
         </title>
-        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="style.css"> <!-- links css and html file -->
     </head>
 
     <body>
+
+        <div class="card">
+            <div class="search"> 
+                <input type="text" placeholder="Search City" 
+                spellcheck="false">
+                <button> <img src="images/search.png"> </button>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" class="weather-icon">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">Toronto</h2>
+                <!--Superflicious details -->
+                <div class="details">
+                    <!--Humidity -->
+                    <div class="col">
+                        <img src="images/humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <!--Wind -->
+                    <div class="col">
+                        <img src="images/wind.png">
+                        <div>
+                            <p class="wind">15 km/hr</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    
+        <script src="script.js"></script>
 
     </body>
 </html>
