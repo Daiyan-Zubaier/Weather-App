@@ -39,21 +39,28 @@ function displayWeather(data){
     //Change weather icon based on weather description
     if (data.weather[0].main == "Clear"){
         weatherIcon.src = "images/clear.png";
+        document.querySelector(".card").style.background = "linear-gradient(135deg, #15d6d6, #2E3192)";
     } 
     else if (data.weather[0].main == "Clouds"){
         weatherIcon.src = "images/clouds.png";
+        document.querySelector(".card").style.background = "linear-gradient(135deg,rgb(196, 222, 237),rgb(84, 94, 97))";
+        
     } 
     else if (data.weather[0].main == "Rain"){
         weatherIcon.src = "images/rain.png";
+        document.querySelector(".card").style.background =  "linear-gradient(135deg,rgb(157, 189, 231),rgb(36, 77, 101))"
     } 
     else if (data.weather[0].main == "Drizzle"){
         weatherIcon.src = "images/drizzle.png";
+        document.querySelector(".card").style.background =  "linear-gradient(135deg,rgb(157, 189, 231),rgb(36, 77, 101))"
     } 
     else if (data.weather[0].main == "Mist"){
         weatherIcon.src = "images/mist.png";
+        document.querySelector(".card").style.background = "linear-gradient(135deg,rgb(196, 222, 237),rgb(84, 94, 97))";
     }
     else if (data.weather[0].main == "Snow"){
         weatherIcon.src = "images/snow.png";
+        document.querySelector(".card").style.background = "linear-gradient(135deg,rgb(196, 222, 237),rgb(84, 94, 97))";
     }
 
     document.querySelector(".weather").style.display = "block";
